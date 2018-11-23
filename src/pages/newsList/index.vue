@@ -46,6 +46,10 @@ export default {
 
 <style lang="less">
 .newListContainer {
+    position: relative;;  
+    padding-bottom:50px;
+    left:0;
+    right:0;
     .mui-table-view {
         .mui-table-view-cell {
             .mui-media-body {

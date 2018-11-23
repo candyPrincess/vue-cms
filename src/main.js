@@ -15,11 +15,17 @@ import "./fonts/mui-icons-extra.ttf"
 
 
 // 引入轮播图组件并注册
-import { Swipe, SwipeItem, Button } from 'mint-ui';
+import { Swipe, SwipeItem, Button, Lazyload } from 'mint-ui';
 
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Button.name, Button);
+// 注册懒加载
+Vue.use(Lazyload);
+
+//引入缩略图插件
+import VuePreview from 'vue2-preview'
+Vue.use(VuePreview)
 
 
 // 发送请求获取数据vue里面用到vue-resource
