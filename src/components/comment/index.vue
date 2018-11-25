@@ -4,7 +4,7 @@
         <hr>
         <textarea v-model="commentContent" placeholder="请吐槽,但是不可以超过120个字" maxlength="120"></textarea>
         <mt-button @click="putComment" type="primary" size="large">发表评论</mt-button>
-        <ul v-for="(item,i) in commentList" :key="item.add_time" class="commentContent">
+        <ul v-for="(item,i) in commentList" :key="i" class="commentContent">
             <li class="firstp">第{{i+1}}楼 用户:{{item.user_name}}  发表时间:{{item.add_time | dataFormat("YYYY-MM-DD HH:mm:ss")}}</li>
             <li class="secondp">{{item.content=== 'undefined' ? "此人很懒,啥也没留下" : item.content}}</li>
         </ul>

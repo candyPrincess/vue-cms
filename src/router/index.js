@@ -10,6 +10,10 @@ import newsListComponent from "../pages/newsList/"
 import newsInfoComponent from "../pages/newsInfo/"
 import photosListComponent from "../pages/photosList"
 import photosListInfoComponent from "../pages/photosListInfo"
+import goodsListComponent from "../pages/goodsList"
+import goodsInfoComponent from "../pages/goodsInfo"
+import goodsDescriptionComponent from "../pages/goodsDescription"
+import goodsCommentComponent from "../pages/goodsComment"
 
 
 
@@ -26,6 +30,13 @@ export default new Router({
     {path:"/home/newsInfo/:id",component:newsInfoComponent},
     {path:"/home/photosList",component:photosListComponent},
     {path:"/home/photosListInfo/:id",component:photosListInfoComponent},
+    {path:"/home/goodsList",component:goodsListComponent},
+    {path:"/home/goodsInfo/:id",component:goodsInfoComponent},
+    {path:"/home/goodsInfo/goodsDescription/:id",component:goodsDescriptionComponent},
+    {path:"/home/goodsInfo/goodsComment/:id",component:goodsCommentComponent}
+    
+  
+
   
 
   ],

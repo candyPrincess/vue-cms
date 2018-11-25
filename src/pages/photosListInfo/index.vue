@@ -8,7 +8,7 @@
      <hr>
      <!-- 缩略图 -->
      <div class="pic">
-        <img class="preview-img" v-for="(item,index) in list" :key="item.src" :src="item.src" @click="$preview.open(index, list)">
+        <img class="preview-img" v-for="(item,index) in list" :key="index" :src="item.src" @click="$preview.open(index, list)">
      </div>
      <div class="content" v-html="PhotoListInfo.content"></div>
 

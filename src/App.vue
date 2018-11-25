@@ -15,7 +15,7 @@
 				<span class="mui-tab-label">member</span>
 			</router-link>
 			<router-link class="mui-tab-item-qxm" to="/shopcar">
-				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge">9</span></span>
+				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span id="badge" class="mui-badge">0</span></span>
 				<span class="mui-tab-label">shopcar</span>
 			</router-link>
 			<router-link class="mui-tab-item-qxm" to="/search">

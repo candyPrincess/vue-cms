@@ -1,12 +1,13 @@
 <template>
     <div class="homeContaier">
-        <mt-swipe :auto="4000">
+        <!-- <mt-swipe :auto="4000">
             <mt-swipe-item v-for="(item,index) in list" :key="index">
                 <a :href="item.url">
                     <img :src="item.img" alt="">
                 </a>
             </mt-swipe-item>
-        </mt-swipe>
+        </mt-swipe> -->
+        <swiper :list="list"></swiper>
 
         <!-- 引入九宫格 -->
         <ul class="mui-table-view mui-grid-view mui-grid-9">
@@ -23,10 +24,10 @@
                 </router-link>
             </li>
 		    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-                <a href="#">
+                <router-link to="/home/goodsList">
 		            <img src="../../assets/menu3.png" alt="">
 		            <div class="mui-media-body">商品购买</div>
-                </a>
+                </router-link>
             </li>
 		    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
                 <a href="#">
@@ -47,7 +48,9 @@
 </template>
 
 <script>
-import { Toast } from 'mint-ui';
+import { Toast } from 'mint-ui'
+import swiper from "../../components/swiper/index"
+
 export default {
     data(){
         return {
@@ -70,7 +73,10 @@ export default {
             })
         }
     },
-
+    // 注册轮播图组件
+    components: {
+        swiper
+    }
 
 }
 </script>
